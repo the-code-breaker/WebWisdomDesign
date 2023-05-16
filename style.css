@@ -10,7 +10,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f3fbfb;
+    background-color: white;
 }
 
 html{
@@ -49,7 +49,7 @@ nav .navBar .nav_items .nav_buttons{
 .main_container{
     position: absolute;
     left: 20rem;
-    top: 1rem;
+    top: 2rem;
     font-family: 'Noto Sans', sans-serif;
     color: #FFFF;
     letter-spacing: 0.1rem;
@@ -61,6 +61,7 @@ nav .navBar .nav_items .nav_buttons{
     align-items: center;  
     flex-wrap: wrap;
     width: 80vw;
+    cursor: pointer;
     
 }
 
@@ -74,6 +75,11 @@ nav .navBar .nav_items .nav_buttons{
     box-shadow: 9px 9px 55px 15px blue;
     z-index: 1;
 }
+.main_container .boxes #box1:hover{
+    transform: scale(105%);
+    transition: 0.3s;
+}
+
 .main_container .boxes #box1 .box_data1{
     display: flex;
     flex-direction: column;
@@ -98,6 +104,11 @@ nav .navBar .nav_items .nav_buttons{
     align-self: flex-start;
     justify-content: center;
     align-items: center;
+}
+.main_container .boxes #box2:hover{
+    transform: scale(105%);
+    transition: 0.3s;
+    z-index: 2;
 }
 .main_container .boxes #box2 .box_data2{
     display: flex;
@@ -127,6 +138,11 @@ nav .navBar .nav_items .nav_buttons{
     align-self: flex-start;
     justify-content: center;
     align-items: center;
+}
+.main_container .boxes #box3:hover{
+    transform: scale(105%);
+    transition: 0.3s;
+    z-index: 2;
 }
 .main_container .boxes #box3 .box_data3{
     display: flex;
@@ -172,6 +188,11 @@ nav .navBar .nav_items .nav_buttons{
     align-items: center;
     color: rgb(152, 138, 120);
 }
+.main_container .boxes #box4:hover{
+    transform: scale(105%);
+    transition: 0.3s;
+    z-index: 2;
+}
 .main_container .boxes #box4 .box_data4{
     display: flex;
     justify-content: space-evenly;
@@ -179,12 +200,17 @@ nav .navBar .nav_items .nav_buttons{
     gap: 2rem;
     align-items: center;
 }
+.main_container .boxes #box4 .box_data4 .box4_video img:hover{
+    transform: scale(200%);
+    transition: 0.5s;
+}
 
 .main_container .boxes #box4 .box_data4 .box4_details{
     display: flex;
     justify-content: space-between;
     gap: 6rem;
 }
+
 .main_container .boxes #box4 .box_data4 .box4_details h3{
     margin: 0;
     padding: 0;
@@ -198,16 +224,22 @@ nav .navBar .nav_items .nav_buttons{
 .main_container .boxes #box5{
     display: flex;
     width: 35rem;
-    height: 50rem;
+    height: 52rem;
     justify-content: center;
     align-items: center;
     color: rgb(152, 138, 120);
-}
 
+}
+.main_container .boxes #box5:hover{
+    transform: scale(105%);
+    transition: 0.3s;
+    z-index: 2;
+}
 .main_container .boxes #box5 .box_data5{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* gap: 4rem; */
 }
 .main_container .boxes #box5 .box_data5 .box5_cards{
     display: flex;
@@ -233,17 +265,34 @@ nav .navBar .nav_items .nav_buttons{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    color: black;
+    color: white;
+    flex-direction: row;
+    box-shadow: 1px 1px 20px 0px blue;
+    gap: 3rem;
+    height: 18rem;
 }
 .main_container .boxes #box5 .box_data5 .box5_cards #box_id1{
-   background-color: #b6bad2;
+    background-color: #516cf4;
+}
+.main_container .boxes #box5 .box_data5 .box5_cards #box_id1:hover{
+    transform: scale(110%);
+    transition: 0.5s;
+}
+
+.main_container .boxes #box5 .box_data5 .box5_cards #box_id2{
+   background-color: white;
+   color: black;
 
 }
-.main_container .boxes #box5 .box_data5 .box5_cards #box_id2{
-   background-color: #9395a1;
 
+.main_container .boxes #box5 .box_data5 .box5_cards #box_id2:hover{
+    transform: scale(110%);
+    transition: 0.5s;
 }
 .main_container .boxes #box5 .box_data5 .box5_cards #box_id3{
-   background-color: #b6bad2;
-
+    background-color: #516cf4
+}
+.main_container .boxes #box5 .box_data5 .box5_cards #box_id3:hover{
+    transform: scale(110%);
+    transition: 0.5s;
 }
